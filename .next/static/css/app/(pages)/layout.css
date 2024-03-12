@@ -18,10 +18,26 @@
   margin-top: 14%;
   margin-bottom: 14%;
   padding: 3%;
-  color: var(--text-dark) !important;
+  font-family: var(--font-sunflower);
+  color: var(--blue) !important;
 }
 @media screen and (max-width: 1048px) {
   .Navbar_hello__Q4O08 {
+    display: none;
+  }
+}
+.Navbar_hello__Q4O08 .Navbar_email__MmNNE {
+  font-family: var(--font-sunflower);
+  color: var(--blue) !important;
+}
+
+.Navbar_type__v2AC6 {
+  margin-top: 10%;
+  margin-bottom: 3%;
+  font-size: 1.2rem !important;
+}
+@media screen and (max-width: 1048px) {
+  .Navbar_type__v2AC6 {
     display: none;
   }
 }
@@ -54,22 +70,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   flex-shrink: 0;
 }
 .Navbar_nav_container__3Is3P .Navbar_links__VkhR7 {
   display: flex;
   flex-direction: column;
-  gap: var(--spacer);
-  color: var(--text-light);
-  font-family: var(--font-josefinSans);
-}
-.Navbar_nav_container__3Is3P .Navbar_links__VkhR7 > * {
-  padding: var(--tiny-spacer);
+  color: var(--blue);
+  font-family: var(--font-sunflower);
 }
 @media screen and (max-width: 1048px) {
   .Navbar_nav_container__3Is3P .Navbar_links__VkhR7 > * {
     text-align: center;
-    padding: var(--small-spacer);
   }
   .Navbar_nav_container__3Is3P .Navbar_links__VkhR7 {
     align-items: center;
@@ -80,11 +92,7 @@
     right: 0;
     height: 0;
     overflow: hidden;
-    flex-direction: column;
     gap: 0;
-    background-color: var(--light-background);
-    color: var(--text-dark);
-    transition: all 0.25s ease-in;
   }
   .Navbar_nav_container__3Is3P .Navbar_links__VkhR7.Navbar_active__aC1zx {
     height: calc(100vh - var(--navbar-height));
@@ -115,20 +123,26 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
+  color: var(--blue);
+  font-family: var(--font-sunflower);
+  gap: var(--tiny-spacer);
+  cursor: pointer;
+  padding: 5%;
+  width: 200px;
 }
 
-.Navbar_linkImage__XXoCb:hover {
-  filter: brightness(70%) saturate(100%) hue-rotate(180deg);
+.Navbar_link__hm_9X:hover {
+  background-color: var(--bright-blue);
+  border-radius: var(--button-radius);
 }
 
-.Navbar_AggieBank__d7XYI {
+.Navbar_Webtool__eIEhA {
   position: absolute;
   bottom: 0;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 @media screen and (max-width: 1048px) {
-  .Navbar_AggieBank__d7XYI {
+  .Navbar_Webtool__eIEhA {
     margin-bottom: 0em;
     position: relative;
     margin: auto;
@@ -142,26 +156,13 @@
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 :root {
   /* variables */
-  --primary: #404040;
-  --secondary: #e7c6f9;
+  --primary: #2C2D33;
   --light-background: #ffffff;
-  --dark-background: #0d303b;
-  --progress: #f1f1f1;
-  --text-dark: #404040;
-  --text-light: #c7c7c7;
-  --text-secondary: #696969;
-  --blue: #197bbd;
-  --green: #439a86;
-  --red: #bb4430;
-  --food: #fcae73;
-  --academics: #209d43;
-  --personal: #8c1a11;
-  --housing: #312070;
-  --travel: #70a6e8;
-  --misc: #6a2346;
-  --b-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.04),
-    0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 16px 24px 0px rgba(0, 0, 0, 0.06);
-  --f-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);
+  --search-bar: #F6F6FB;
+  --text-dark: #2C2D33;
+  --blue: #355B85;
+  --light-blue: #9AADC2;
+  --bright-blue: #F5F7F9;
   /* spacers */
   --tiny-spacer: 8px;
   --small-spacer: 16px;
@@ -169,10 +170,8 @@
   --medium-spacer: 48px;
   --large-spacer: 80px;
   /* border radius */
-  --b-radius: 19px;
-  --f-radius: 10px;
-  /* navbar */
-  --navbar-height: 80px;
+  --b-radius: 20px;
+  --button-radius: 5px;
   background-color: var(--light-background);
 }
 
@@ -181,7 +180,7 @@
   padding: 0;
   margin: 0;
   font-family: var(--font-josefin_sans);
-  color: var(--text-dark);
+  color: var(--text-blue);
 }
 
 a {

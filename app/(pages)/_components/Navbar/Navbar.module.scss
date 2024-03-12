@@ -17,10 +17,25 @@ $scale: 1.04;
   margin-top: 14%;
   margin-bottom: 14%;
   padding: 3%;
+  font-family: var(--font-sunflower);
   @include mixins.tablet {
     display: none;
   }
-  color: var(--text-dark) !important;
+  color: var(--blue) !important;
+
+  .email{
+    font-family: var(--font-sunflower);
+    color: var(--blue) !important;
+  }
+}
+
+.type{
+  margin-top: 10%;
+  margin-bottom: 3%;
+  font-size: 1.2rem !important;
+  @include mixins.tablet {
+    display: none;
+  }
 }
 
 .container {
@@ -51,20 +66,18 @@ $scale: 1.04;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   flex-shrink: 0;
 
   .links {
     display: flex;
     flex-direction: column;
-    gap: var(--spacer);
-    color: var(--text-light);
-    font-family: var(--font-josefinSans);
+    color: var(--blue);
+    font-family: var(--font-sunflower);
 
     > * {
-      padding: var(--tiny-spacer);
       @include mixins.tablet {
         text-align: center;
-        padding: var(--small-spacer);
       }
     }
 
@@ -78,12 +91,7 @@ $scale: 1.04;
       height: 0;
       overflow: hidden;
 
-      flex-direction: column;
       gap: 0;
-      background-color: var(--light-background);
-      color: var(--text-dark);
-
-      transition: all 0.25s ease-in;
     }
   }
 
@@ -119,17 +127,25 @@ $scale: 1.04;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
+  color: var(--blue);
+  font-family: var(--font-sunflower);
+  gap: var(--tiny-spacer);
+  cursor: pointer;
+  padding: 5%;
+  width: 200px;
 }
 
-.linkImage:hover {
-  filter: brightness(70%) saturate(100%) hue-rotate(180deg);
+.link:hover {
+  background-color: var(--bright-blue);
+  border-radius: var(--button-radius);
+  
 }
 
-.AggieBank {
+
+.Webtool {
   position: absolute;
   bottom: 0;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   @include mixins.tablet {
     margin-bottom: 0em;
     position: relative;

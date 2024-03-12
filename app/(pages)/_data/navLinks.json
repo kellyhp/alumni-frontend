@@ -1,18 +1,44 @@
 [
   {
-    "name": "Home",
-    "slug": "/"
+    "name": "Dashboard",
+    "slug": "/",
+    "image": "/index/Dashboard.png",
+    "type": "MENU"
   },
   {
-    "name": "About Us",
-    "slug": "/about"
+    "name": "Recommendations",
+    "slug": "/recommendations",
+    "image": "/index/Recommendation.png",
+    "type": "MENU" 
   },
   {
-    "name": "Examples",
-    "slug": "/examples"
+    "name": "Alumni Directory",
+    "slug": "/directory",
+    "image": "/index/Directory.png",
+    "type": "MENU"
   },
   {
-    "name": "Contact Us",
-    "slug": "/contact"
+    "name": "Data Comparison",
+    "slug": "/comparison",
+    "image": "/index/Comparison.png",
+    "type": "MENU" 
+  },
+  {
+    "name": "Data Export",
+    "slug": "/export",
+    "image": "/index/Export.png",
+    "type": "MENU" 
+  },
+  {
+    "name": "Settings",
+    "slug": "/setting",
+    "image": "/index/Setting.png",
+    "type": "OTHER" 
+  },
+  {
+    "name": "Sign Out",
+    "slug": "/contact",
+    "image": "/index/Profile.png",
+    "type": "OTHER"
   }
 ]

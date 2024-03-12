@@ -7,6 +7,7 @@
   height: 100%;
   overflow-y: scroll;
   padding-bottom: 4%;
+  color: var(--blue);
   @include mixins.tablet {
     display: flex;
     flex-direction: column;

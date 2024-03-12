@@ -1,5 +1,11 @@
 {
   "pages": {
+    "/(pages)/export/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/export/page.css",
+      "static/chunks/app/(pages)/export/page.js"
+    ],
     "/(pages)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -12,10 +18,23 @@
       "static/css/app/(pages)/(index-page)/page.css",
       "static/chunks/app/(pages)/(index-page)/page.js"
     ],
-    "/not-found": [
+    "/(pages)/recommendations/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
+      "static/css/app/(pages)/recommendations/page.css",
+      "static/chunks/app/(pages)/recommendations/page.js"
+    ],
+    "/(pages)/directory/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/directory/page.css",
+      "static/chunks/app/(pages)/directory/page.js"
+    ],
+    "/(pages)/comparison/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/comparison/page.css",
+      "static/chunks/app/(pages)/comparison/page.js"
     ]
   }
 }
