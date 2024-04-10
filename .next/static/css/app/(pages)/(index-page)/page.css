@@ -59,7 +59,6 @@
 }
 @media screen and (max-width: 1048px) {
   .Layout_ColRow__YhDyN {
-    gap: 2%;
     flex-direction: column;
     justify-items: center;
   }
@@ -78,6 +77,15 @@
   }
 }
 
+.Layout_marginTop__rnocq {
+  margin-top: 2%;
+}
+@media screen and (max-width: 1048px) {
+  .Layout_marginTop__rnocq {
+    margin-top: 5%;
+  }
+}
+
 .Layout_home__A39ad {
   width: 100%;
   height: 100%;
@@ -86,4 +94,79 @@
   top: 0;
   left: 0;
   position: fixed;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./app/(pages)/_components/Card/Card.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Card_darkblue__fIRpT {
+  background-color: var(--blue);
+  color: var(--light-background);
+  padding: var(--spacer) var(--small-spacer);
+  gap: var(--tiny-spacer);
+  border-radius: var(--b-radius);
+  display: flex;
+  flex-direction: column;
+  border: solid 1px var(--black);
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 434px;
+}
+
+.Card_lightblue__vO_C0 {
+  background-color: var(--light-blue);
+  color: var(--black);
+  padding: var(--spacer) var(--small-spacer);
+  gap: var(--tiny-spacer);
+  border-radius: var(--b-radius);
+  display: flex;
+  flex-direction: column;
+  border: solid 1px var(--black);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.Card_black__vl0BT {
+  background-color: var(--primary);
+  color: var(--light-background);
+  padding: var(--spacer) var(--small-spacer);
+  gap: var(--tiny-spacer);
+  border-radius: var(--b-radius);
+  display: flex;
+  flex-direction: column;
+  border: solid 1px var(--black);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.Card_line__N7Zox {
+  background-color: var(--light-background);
+  height: 1px;
+  width: 100%;
+}
+
+.Card_row__vJ1I5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--small-spacer)/2;
+}
+
+.Card_spacer__JVye3 {
+  gap: var(--small-spacer);
+  margin-top: var(--small-spacer);
+  display: flex;
+  flex-direction: column;
+}
+
+.Card_button__ThXml {
+  font-family: var(--font-sunflower);
+  color: var(--blue);
+  background-color: var(--light-background);
+  padding: var(--tiny-spacer);
+  border-radius: var(--button-radius);
+  border: solid 1px var(--black);
+  cursor: pointer;
+  font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
 }
