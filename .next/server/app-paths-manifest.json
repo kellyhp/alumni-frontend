@@ -1,7 +1,7 @@
 {
-  "/(pages)/export/page": "app/(pages)/export/page.js",
   "/(pages)/(index-page)/page": "app/(pages)/(index-page)/page.js",
-  "/(pages)/comparison/page": "app/(pages)/comparison/page.js",
+  "/(pages)/export/page": "app/(pages)/export/page.js",
+  "/(pages)/recommendations/page": "app/(pages)/recommendations/page.js",
   "/(pages)/directory/page": "app/(pages)/directory/page.js",
-  "/(pages)/recommendations/page": "app/(pages)/recommendations/page.js"
+  "/(pages)/comparison/page": "app/(pages)/comparison/page.js"
 }
