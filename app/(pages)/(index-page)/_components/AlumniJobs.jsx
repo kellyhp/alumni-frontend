@@ -84,9 +84,9 @@ export default function AlumniJobs() {
                 <div className={styles.button}>View Report</div>
             </Link>
         </div>
-      <span class={styles.line}></span>
+      <span className={styles.line}></span>
       <canvas id="jobChart" width="400" height="150"></canvas>
-      <div class={styles.flexwrap}>
+      <div className={styles.flexwrap}>
         {jobData.map((job, index) => (
             <div class={styles.row}key={job._id}>
             <div style={{ backgroundColor: backgroundColors[index], width: '8px', height: '8px', display: 'inline-block', marginRight: '5px', borderRadius: '15px' }}></div>

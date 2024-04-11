@@ -24,8 +24,10 @@
   flex-direction: row;
   gap: 2%;
   @include mixins.tablet {
+    margin-top: 5%;
     flex-direction: column;
     justify-items: center;
+    align-items: center;
   }
 }
 
