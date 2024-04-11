@@ -2,7 +2,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
-import webtool from "../../../../public/index/webtool.png";
 import styles from "./Navbar.module.scss";
 import useToggle from "@hooks/useToggle";
 
@@ -18,10 +17,10 @@ export default function Navbar({ navLinks }) {
   return (
     <div className={styles.relative_wrapper}>
       <div className={styles.container}>
-        <h2 className={styles.hello}>
-          Erin
+        <div className={styles.hello}>
+          <h2> Erin</h2>
           <h4 className={styles.email}>erin@email.com</h4>{" "}
-        </h2>
+        </div>
         <div className={styles.nav_container}>
           <div className={`${styles.links} ${active ? styles.active : null}`}>
             {Object.entries(groupedLinks).map(([type, links]) => (
@@ -52,7 +51,7 @@ export default function Navbar({ navLinks }) {
         </div>
         <Image
           className={styles.Webtool}
-          src={webtool}
+          src={require("../../../../public/index/webtool.png")}
           width={200}
           height={100}
           alt="Logo"

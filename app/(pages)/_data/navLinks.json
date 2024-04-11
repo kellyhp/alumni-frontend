@@ -31,7 +31,7 @@
   },
   {
     "name": "Settings",
-    "slug": "/setting",
+    "slug": "/settings",
     "image": "/index/Setting.png",
     "type": "OTHER" 
   },
