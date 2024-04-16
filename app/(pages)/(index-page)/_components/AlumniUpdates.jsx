@@ -26,7 +26,6 @@ export default function AlumniUpdates() {
                 <div className={styles.button}>Compare Data</div>
             </Link>
         </div>
-
       <div className={styles.line}></div>
       {updates.slice(0, 5).map((update, index) => (
         <div className={styles.spacer} key={index}>
