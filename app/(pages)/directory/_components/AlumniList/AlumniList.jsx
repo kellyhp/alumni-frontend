@@ -14,7 +14,7 @@ export default function AlumniList({ alumniData }) {
         } else {
             return alumniData.map((alumni, index) => (
                 <div key={index} className={styles.content}>
-                    <h4>{alumni.name} (ID: {extractUsername(alumni.url)})</h4>
+                    <h4 className={styles.underline}>{alumni.name} (ID: {extractUsername(alumni.url)})</h4>
                     <div className={styles.intel}>
                         <div className={styles.intelcolumn}>
                             <span>
