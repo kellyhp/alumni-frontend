@@ -62,24 +62,24 @@ export default function Search() {
             setSearchQueryError('');
             setSelectedTags([...selectedTags, trimmedQuery]);
             setSearchQuery('');
+            setCurrentPage(1);
         }
     };
     
     const handleYearSubmit = (event) => {
         event.preventDefault();
         const year = parseInt(event.target.value, 10);
-        if (isNaN(year)) {
-            setGraduationYearError('Please enter a valid year.');
-        } else if (year < 1900 || year > new Date().getFullYear()) {
+        if (year < 1900 || year > new Date().getFullYear()) {
             setGraduationYearError('Please enter a valid year between 1900 and the current year.');
         } else {
             setGraduationYearError('');
-            setGraduationYear(year);
+            setCurrentPage(1);
         }
     };    
 
     const handleSearchChange = (event) => {
         setSearchQuery(event.target.value);
+        setCurrentPage(1);
     };
 
     const handleYearChange = (event) => {
