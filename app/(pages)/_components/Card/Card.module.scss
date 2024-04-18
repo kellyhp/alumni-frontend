@@ -24,7 +24,15 @@
     display: flex;
     flex-direction: column;
     border: solid 1px var(--black);
-    width: fit-content;
+    max-width: 430px;
+    .underline {
+        font-weight: 500;
+        text-decoration: underline;
+    }
+    .bold {
+        margin-top: 2%;
+        font-weight: 600;
+    }
 }
 
 .black {
@@ -46,11 +54,18 @@
     width: 100%; 
 }
 
+.RowCol {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-spacer);
+}
+
 .row {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: var(--small-spacer)/2;
+    margin-top: 2%;
 }
 
 .spacer{
