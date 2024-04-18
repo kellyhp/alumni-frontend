@@ -148,3 +148,17 @@ export default function SuggestedCard() {
         </div>
     );
 }
+  
+  return (
+    <div className={styles.ColRow}>
+        <div className={styles.black}>
+            <h4>Chime</h4>
+            <span className={styles.line}></span>
+            {/* <canvas id="locationChart" width="400" height="150"></canvas> */}
+        </div>
+        <div className={styles.lightblue}>
+            <p> Chime is a financial technology company that offers mobile banking services. </p>
+        </div>
+    </div>
+  );
+}
