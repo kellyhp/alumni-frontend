@@ -20,7 +20,7 @@ export default function SelectedTags({ selectedTags, handleTagDelete, handleClea
                 {tag}
                 <div className={styles.exit} onClick={() => handleTagDelete(tag)}>
                     <Image
-                        src={require("/public/index/exit.png")}
+                        src={require("/public/index/Exit.png")}
                         width={20}
                         height={20}
                         alt="Delete Tag"
