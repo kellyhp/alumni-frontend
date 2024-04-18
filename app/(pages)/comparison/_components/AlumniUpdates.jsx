@@ -1,6 +1,5 @@
 'use client';
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import styles from '@components/Card/Card.module.scss';
 
 export default function AlumniUpdates() {
@@ -22,9 +21,6 @@ export default function AlumniUpdates() {
     <div className={styles.darkblue}>
         <div className={styles.row} style={{ justifyContent: 'space-between' }}>
             <h4>Alumni Updates</h4>
-            <Link href="/comparison">
-                <div className={styles.button}>Compare Data</div>
-            </Link>
         </div>
       <div className={styles.line}></div>
       {updates.slice(0, 5).map((update, index) => (
