@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
         <div className={styles.ColRow}>
           <div className={styles.RowCol}>
-            <div className={styles.ColRow} style={{ justifyContent: 'space-between', width: '100%' }}>
+            <div className={styles.ColRow} style={{ justifyContent: 'space-between', width: '100%', marginBottom: '5px' }}>
               <CurrentCount />
               <YearAlumni />
             </div>
