@@ -1,5 +1,3 @@
-'use client'
-
 import Header from "./_components/Header";
 import CurrentCount from "./_components/CurrentCount";
 import YearAlumni from "./_components/YearAlumni";
@@ -8,8 +6,15 @@ import TopCompanies from "./_components/TopCompanies";
 import AlumniLocations from "./_components/AlumniLocations";
 import AlumniUpdates from "./_components/AlumniUpdates";
 import styles from "@components/Layout/Layout.module.scss"
+import { getServerSession } from "next-auth";
+import { authConfig } from "app/lib/auth";
+import { redirect } from "next/navigation";
 
-export default function Home() {
+export default async function Home() {
+  const session = await getServerSession(authConfig);
+  console.log("Session: ", session);
+  if (!session) return redirect("/authentication");
+  
   return (
     <main className={styles.mains}>
       <Header />
