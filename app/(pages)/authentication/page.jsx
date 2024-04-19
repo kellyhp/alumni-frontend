@@ -1,7 +1,8 @@
-import GoogleSignInButton from "./components/authButtons";
+import GoogleSignInButton from "./_components/authButtons";
 import { getServerSession } from "next-auth";
 import { authConfig } from "app/lib/auth";
 import { redirect } from "next/navigation";
+import styles from "@components/Layout/Layout.module.scss"
 
 export default async function SignInPage() {
     const session = await getServerSession(authConfig);
@@ -11,11 +12,11 @@ export default async function SignInPage() {
     if (session) return redirect("/");
 
     return (
-        <div className="w-full flex flex-col items-center justify-center min-h-screen py-2">
-            <div className="flex flex-col items-center mt-10 p-10 shadow-md">
-                <h1 className="mt-10 mb-4 text-4xl font-bold">Sign In</h1>
+        <main className={styles.container}>
+            <div className={styles.box}>
+                <h1 className={styles.title}>Sign In</h1>
                 <GoogleSignInButton />
             </div>
-        </div>
+        </main>
     );
 }

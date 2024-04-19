@@ -143,6 +143,24 @@ $scale: 1.04;
   
 }
 
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--blue);
+  font-family: var(--font-sunflower);
+  gap: var(--tiny-spacer);
+  cursor: pointer;
+  padding: 5%;
+  width: 200px;
+  background-color: var(--light-background);
+  border-color: var(--light-background) !important;
+}
+
+.button:hover {
+  background-color: var(--bright-blue);
+  border-radius: var(--button-radius);
+}
 
 .Webtool {
   bottom: 0;
