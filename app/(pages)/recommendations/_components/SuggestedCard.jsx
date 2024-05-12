@@ -121,7 +121,7 @@ export default function SuggestedCard() {
                         </div>
                     </div>
                     <div className={styles.lightblue}>
-                        <p>{company.name} is a company. Trying to reach the line limit to see how long this goes for.</p>
+                        <p>{company.bio}</p>
                         <p><span className={styles.underline}>Founded:</span> {company.foundingDate}</p>
                         <p><span className={styles.underline}>Notable Investors:</span> {company.notableInvestors}</p>
                         <p><span className={styles.underline}>Headquarters:</span> {company.hq}</p>
@@ -135,7 +135,7 @@ export default function SuggestedCard() {
                             <p>No management information available.</p>
                         )}
                         <p className={styles.bold}>UC Davis Alumni within the company:</p>
-                        {company.alumnis.length > 0 ? (
+                        {company.alumnis !== null ? (
                             company.alumnis.map(alumni => (
                                 <p key={alumni._id}>{alumni.name}</p>
                             ))

@@ -6,7 +6,7 @@
     width: fit-content;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid var(--black);
+    box-shadow: var(--b-shadow);
     padding: 8px;
     border-radius: var(--b-radius);
   }

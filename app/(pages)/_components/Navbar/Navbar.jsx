@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
@@ -12,7 +13,6 @@ export default function Navbar({ navLinks }) {
     acc[link.type] = [...(acc[link.type] || []), link];
     return acc;
   }, {});
-
 
   return (
     <div className={styles.relative_wrapper}>
