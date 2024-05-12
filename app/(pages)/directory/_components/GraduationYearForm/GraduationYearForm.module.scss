@@ -12,7 +12,8 @@
 
 .graduation{
     border-radius: var(--button-radius);
-    border: 1px solid var(--black);
+    border: none;
+    box-shadow: var(--b-shadow);
     font-size: 0.9em;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -35,7 +36,8 @@
 
 .button {
     border-radius: var(--b-radius);
-    border: 1px solid var(--blue);
+    box-shadow: var(--b-shadow);
+    border: none;
     color: var(--light-background);
     background-color: var(--blue);
     cursor: pointer;

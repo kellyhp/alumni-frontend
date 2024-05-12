@@ -17,7 +17,7 @@
 
 .tag {
     border-radius: var(--b-radius);
-    border: 1px solid var(--blue);
+    box-shadow: var(--b-shadow);
     color: var(--blue);
     display: flex;
     flex-direction: row;
@@ -28,7 +28,7 @@
 
 .clear {
     border-radius: var(--b-radius);
-    border: 1px solid var(--blue);
+    box-shadow: var(--b-shadow);
     color: var(--light-background);
     background-color: var(--blue);
     cursor: pointer;

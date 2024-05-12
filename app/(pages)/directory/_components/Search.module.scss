@@ -17,7 +17,7 @@
     border-radius: var(--b-radius);
     display: flex;
     flex-direction: column;
-    border: solid 1px var(--black);
+    box-shadow: var(--b-shadow);
     width: 900px;
     @include mixins.tablet {
         width: 300px;

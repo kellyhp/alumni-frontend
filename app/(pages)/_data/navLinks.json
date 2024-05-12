@@ -34,11 +34,5 @@
     "slug": "/settings",
     "image": "/index/Setting.png",
     "type": "OTHER" 
-  },
-  {
-    "name": "Sign Out",
-    "slug": "/contact",
-    "image": "/index/Profile.png",
-    "type": "OTHER"
   }
 ]

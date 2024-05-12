@@ -19,12 +19,9 @@ export default function ExportCard() {
     return (
         <div className={styles.lightblue}>
             <p>Export Data Into A CSV File Here:</p>
-            <div className={styles.button} onClick={handleExport}>Export Data</div>
-            {alumniData.length > 0 && (
-                <CSVLink data={alumniData} filename={'alumni_data.csv'} className={styles.button} style={{ marginTop: '1%' }}>
-                    Download CSV
-                </CSVLink>
-            )}
+            <CSVLink  onClick={handleExport} data={alumniData} filename={'alumni_data.csv'} className={styles.button} style={{ marginTop: '1%' }}>
+                Download CSV
+            </CSVLink>
         </div>
     );
 }
