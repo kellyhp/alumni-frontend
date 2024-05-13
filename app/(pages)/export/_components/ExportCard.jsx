@@ -10,6 +10,7 @@ export default function ExportCard() {
         try {
             const response = await fetch('https://alumni-backend-6954.onrender.com/alumnis/allalumni');
             const data = await response.json();
+            console.log(data);
             setAlumniData(data);
         } catch (error) {
             console.error('Error fetching alumni data:', error);
@@ -19,7 +20,7 @@ export default function ExportCard() {
     return (
         <div className={styles.lightblue}>
             <p>Export Data Into A CSV File Here:</p>
-            <CSVLink  onClick={handleExport} data={alumniData} filename={'alumni_data.csv'} className={styles.button} style={{ marginTop: '1%' }}>
+            <CSVLink  asyncOnClick={true} onClick={handleExport} data={alumniData} filename={'alumni_data.csv'} className={styles.button} style={{ marginTop: '1%' }}>
                 Download CSV
             </CSVLink>
         </div>
