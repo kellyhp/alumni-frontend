@@ -11,14 +11,14 @@ export default function AlumniJobs() {
 
   useEffect(() => {
     // Fetch the top 5 jobs data
-    fetch('https://alumni-backend-6954.onrender.com/alumnis/top-5-jobs')
-      .then(response => response.json())
-      .then(data => {
-        setJobData(data);
-      })
-      .catch(error => {
-        console.error('Error fetching top 5 jobs data:', error);
-      });
+    fetch("https://webtools-api.engr.ucdavis.edu/alumnis/top-5-jobs")
+        .then((response) => response.json())
+        .then((data) => {
+            setJobData(data);
+        })
+        .catch((error) => {
+            console.error("Error fetching top 5 jobs data:", error);
+        });
   }, []);
 
   useEffect(() => {

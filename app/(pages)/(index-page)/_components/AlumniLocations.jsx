@@ -10,14 +10,14 @@ export default function AlumniLocations() {
 
   useEffect(() => {
     // Fetch the top 5 locations data
-    fetch('https://alumni-backend-6954.onrender.com/alumnis/top-5-locations')
-      .then(response => response.json())
-      .then(data => {
-        setLocationData(data);
-      })
-      .catch(error => {
-        console.error('Error fetching top 5 locations data:', error);
-      });
+    fetch("https://webtools-api.engr.ucdavis.edu/alumnis/top-5-locations")
+        .then((response) => response.json())
+        .then((data) => {
+            setLocationData(data);
+        })
+        .catch((error) => {
+            console.error("Error fetching top 5 locations data:", error);
+        });
   }, []);
 
   useEffect(() => {

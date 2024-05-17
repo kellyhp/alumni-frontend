@@ -17,7 +17,9 @@ const Subscription = () => {
   const fetchSubscriptionStatus = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`https://alumni-backend-6954.onrender.com/emails/check-subscription?email=${email}`);
+      const response = await fetch(
+          `https://webtools-api.engr.ucdavis.edu/emails/check-subscription?email=${email}`
+      );
       const data = await response.json();
       setSubscribed(data.subscribed);
       setOriginalSubscribed(data.subscribed);

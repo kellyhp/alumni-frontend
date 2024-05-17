@@ -14,7 +14,9 @@ export default function SuggestedCard() {
 
     const fetchCompanyData = async () => {
         try {
-            const response = await fetch('https://alumni-backend-6954.onrender.com/equity-zen/');
+            const response = await fetch(
+                "https://webtools-api.engr.ucdavis.edu/equity-zen/"
+            );
             if (!response.ok) {
                 throw new Error('Failed to fetch company data');
             }
