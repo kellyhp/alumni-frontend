@@ -37,7 +37,7 @@ jobs:
         fi
 
     - name: Run Jest tests
-      run: npm test
+      run: npm run test
 
     - name: Build project
       run: npm run build
