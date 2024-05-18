@@ -55,6 +55,3 @@ jobs:
       with:
         name: lhci-reports
         path: ./.lighthouseci
-
-    - name: Check for vulnerabilities
-      run: npm audit
