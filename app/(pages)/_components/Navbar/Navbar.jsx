@@ -15,7 +15,7 @@ export default function Navbar({ navLinks }) {
   }, {});
 
   return (
-    <div className={styles.relative_wrapper}>
+    <div className={styles.relative_wrapper} data-testid="navbar">
       <div className={styles.container}>
         <div className={styles.hello}>
           <h2> Erin</h2>
@@ -45,13 +45,13 @@ export default function Navbar({ navLinks }) {
               </div>
             ))}
           </div>
-          <button className={styles.menu} onClick={toggleActive}>
+          <button className={styles.menu} onClick={toggleActive} data-testid="menu-button">
             {active ? <RxCross2 /> : <RxHamburgerMenu />}
           </button>
         </div>
         <Image
           className={styles.Webtool}
-          src={require("../../../../public/index/webtool.png")}
+          src="/index/webtool.png"
           width={200}
           height={100}
           alt="Logo"

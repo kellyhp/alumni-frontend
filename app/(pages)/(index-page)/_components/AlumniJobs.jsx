@@ -77,7 +77,7 @@ export default function AlumniJobs() {
   }, [jobData]);
 
   return (
-    <div className={styles.black}>
+    <div className={styles.black} data-testid="alumni-jobs">
         <div className={styles.row} style={{ justifyContent: 'space-between' }}>
             <h4>Alumni Jobs</h4>
             <Link href="/export">
