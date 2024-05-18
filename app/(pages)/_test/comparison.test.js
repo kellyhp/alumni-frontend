@@ -1,5 +1,8 @@
 import React from "react";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+const testingLibraryReact = require("@testing-library/react");
+const render = testingLibraryReact.render;
+const screen = testingLibraryReact.screen;
+const waitFor = testingLibraryReact.waitFor;
 import "@testing-library/jest-dom";
 import Header from "../comparison/_components/Header"
 import AlumniUpdates from "../comparison/_components/AlumniUpdates";

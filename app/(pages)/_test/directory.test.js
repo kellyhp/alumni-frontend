@@ -1,5 +1,8 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+const testingLibraryReact = require("@testing-library/react");
+const render = testingLibraryReact.render;
+const screen = testingLibraryReact.screen;
+const fireEvent = testingLibraryReact.fireEvent;
 import '@testing-library/jest-dom';
 import Header from '../directory/_components/Header';
 import SearchForm from '../directory/_components/SearchForm/SearchForm';

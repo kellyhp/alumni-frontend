@@ -1,5 +1,9 @@
 import React from "react";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+const testingLibraryReact = require("@testing-library/react");
+const render = testingLibraryReact.render;
+const screen = testingLibraryReact.screen;
+const fireEvent = testingLibraryReact.fireEvent;
+const waitFor = testingLibraryReact.waitFor;
 import "@testing-library/jest-dom";
 import Header from "../export/_components/Header";
 import ExportCard from "../export/_components/ExportCard";

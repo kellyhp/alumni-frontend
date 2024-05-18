@@ -85,8 +85,7 @@
     },
     "transformIgnorePatterns": [
       "/node_modules/",
-      "^.+\\.module\\.(css|sass|scss)$",
-      "/node_modules/(?!(@testing-library)/)"
+      "^.+\\.module\\.(css|sass|scss)$"
     ]
   }
 }
