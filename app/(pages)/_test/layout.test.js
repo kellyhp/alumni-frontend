@@ -1,8 +1,5 @@
 import React from "react";
-const testingLibraryReact = require("@testing-library/react");
-const render = testingLibraryReact.render;
-const fireEvent = testingLibraryReact.fireEvent;
-const waitFor = testingLibraryReact.waitFor;
+import { render, fireEvent } from "@testing-library/react";
 import RootLayout from "../layout";
 import navLinks from "@data/navLinks.json";
 import "@testing-library/jest-dom";

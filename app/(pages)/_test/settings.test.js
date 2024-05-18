@@ -1,8 +1,5 @@
 import React from 'react';
-const testingLibraryReact = require("@testing-library/react");
-const render = testingLibraryReact.render;
-const screen = testingLibraryReact.screen;
-const waitFor = testingLibraryReact.waitFor;
+import { render, screen, waitFor, userEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Header from '../settings/_components/Header';
 import Subscription from '../settings/_components/Subscription/Subscription';
