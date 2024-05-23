@@ -105,11 +105,11 @@ export default function SuggestedCard() {
 
     return (
         <div className={styles.RowCol}>
-          <h4> Suggested Companies with Davis Alumnis </h4>
+          <h4> Suggested Companies </h4>
             {companyData.map(company => (
                 <div key={company._id} className={layout.ColRow}>
                     <div className={styles.black}>
-                        <h4>{company.name}</h4>
+                        <h4><a href={company.ezenLink} target={"_blank"}>{company.name}</a></h4>
                         <span className={styles.line}></span>
                         <div className={layout.align}> 
                           <canvas id={`fundingChart_${company._id}`} width="400" height="150" ref={(el) => (chartRefs.current[company._id] = el)} />
