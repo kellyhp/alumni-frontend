@@ -78,7 +78,7 @@ export default function AlumniLocations() {
     <div className={styles.black}>
       <h4>Top Alumni Locations</h4>
       <span className={styles.line}></span>
-      <canvas id="locationChart" width="400" height="150"></canvas>
+      <canvas id="locationChart" width="400" height="150" data-testid="locationChart"></canvas>
       <div className={styles.flexwrap}>
         {locationData.map((location, index) => (
             <div className={styles.row} key={location._id}>

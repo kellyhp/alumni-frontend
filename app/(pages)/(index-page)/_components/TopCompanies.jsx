@@ -78,7 +78,7 @@ export default function TopCompanies() {
     <div className={styles.darkblue}>
       <h4>Top Companies</h4>
       <span className={styles.line}></span>
-      <canvas id="companyChart" width="400" height="150"></canvas>
+      <canvas id="companyChart" width="400" height="150" data-testid="companyChart"></canvas>
       <div className={styles.flexwrap}>
         {companyData.map((company, index) => (
             <div className={styles.row} key={company._id}>
