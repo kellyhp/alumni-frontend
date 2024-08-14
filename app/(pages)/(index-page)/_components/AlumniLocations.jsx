@@ -10,7 +10,7 @@ export default function AlumniLocations() {
 
   useEffect(() => {
     // Fetch the top 5 locations data
-    fetch("https://webtools-api.engr.ucdavis.edu/alumnis/top-5-locations")
+    fetch("${process.env.NEXT_PUBLIC_API_URL}/alumnis/top-5-locations")
         .then((response) => response.json())
         .then((data) => {
             setLocationData(data);

@@ -18,7 +18,7 @@ const Subscription = () => {
     try {
       setLoading(true);
       const response = await fetch(
-          `https://webtools-api.engr.ucdavis.edu/emails/check-subscription?email=${email}`
+          `https://alumni-backend-6954.onrender.com/emails/check-subscription?email=${email}`
       );
       const data = await response.json();
       setSubscribed(data.subscribed);
@@ -44,8 +44,8 @@ const Subscription = () => {
   const handleSaveChanges = async () => {
     try {
       setLoading(true);
-      const endpoint = subscribed ? 'https://alumni-backend-6954.onrender.com/emails/subscribe' : 
-      'https://alumni-backend-6954.onrender.com/emails/unsubscribe';
+      const endpoint = subscribed ? '${process.env.NEXT_PUBLIC_API_URL}/emails/subscribe' : 
+      '${process.env.NEXT_PUBLIC_API_URL}/emails/unsubscribe';
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: {

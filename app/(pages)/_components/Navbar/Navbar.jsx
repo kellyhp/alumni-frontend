@@ -18,8 +18,8 @@ export default function Navbar({ navLinks }) {
     <div className={styles.relative_wrapper} data-testid="navbar">
       <div className={styles.container}>
         <div className={styles.hello}>
-          <h2> Erin</h2>
-          <h4 className={styles.email}>erin@email.com</h4>{" "}
+          <h2> User </h2>
+          <h4 className={styles.email}>user@email.com</h4>{" "}
         </div>
         <div className={styles.nav_container}>
           <div className={`${styles.links} ${active ? styles.active : null}`}>

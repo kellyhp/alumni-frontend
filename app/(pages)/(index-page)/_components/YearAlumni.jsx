@@ -6,7 +6,7 @@ export default function YearAlumni() {
     const [alumniCount, setAlumniCount] = useState(null);
   
     useEffect(() => {
-      fetch("https://webtools-api.engr.ucdavis.edu/alumnis/count/current")
+      fetch("${process.env.NEXT_PUBLIC_API_URL}/alumnis/count/current")
           .then((response) => response.json())
           .then((data) => {
               setAlumniCount(data.count);

@@ -15,7 +15,7 @@ export default function SuggestedCard() {
     const fetchCompanyData = async () => {
         try {
             const response = await fetch(
-                "https://webtools-api.engr.ucdavis.edu/equity-zen/"
+                "${process.env.NEXT_PUBLIC_API_URL}/equity-zen/"
             );
             if (!response.ok) {
                 throw new Error('Failed to fetch company data');
