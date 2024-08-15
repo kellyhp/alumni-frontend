@@ -25,7 +25,7 @@ export default function Search() {
     const fetchAlumniData = async () => {
         try {
             const baseUrl =
-                "${process.env.NEXT_PUBLIC_API_URL}/alumnis/search";
+                `${process.env.NEXT_PUBLIC_API_URL}/alumnis/search`;
             const params = new URLSearchParams();
             params.append('page', currentPage);
             if (searchQuery.trim() !== '') {

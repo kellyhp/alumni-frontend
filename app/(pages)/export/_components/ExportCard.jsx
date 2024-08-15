@@ -9,7 +9,7 @@ export default function ExportCard() {
     const handleExport = async () => {
         try {
             const response = await fetch(
-                "${process.env.NEXT_PUBLIC_API_URL}/alumnis/allalumni"
+                `${process.env.NEXT_PUBLIC_API_URL}/alumnis/allalumni`
             );
             const data = await response.json();
             console.log(data);

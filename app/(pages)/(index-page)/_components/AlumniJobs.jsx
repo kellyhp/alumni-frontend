@@ -11,7 +11,7 @@ export default function AlumniJobs() {
 
   useEffect(() => {
     // Fetch the top 5 jobs data
-    fetch("${process.env.NEXT_PUBLIC_API_URL}/alumnis/top-5-jobs")
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/alumnis/top-5-jobs`)
         .then((response) => response.json())
         .then((data) => {
             setJobData(data);

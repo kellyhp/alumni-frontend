@@ -7,7 +7,7 @@ export default function AlumniUpdates() {
 
   useEffect(() => {
     // Fetch updates data
-    fetch('${process.env.NEXT_PUBLIC_API_URL}/compare')
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/compare`)
       .then(response => response.json())
       .then(data => {
         setUpdates(data);
