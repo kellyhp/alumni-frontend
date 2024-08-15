@@ -15,7 +15,7 @@ export default function SuggestedCard() {
     const fetchCompanyData = async () => {
         try {
             const response = await fetch(
-                `${process.env.NEXT_PUBLIC_API_URL}/equity-zen/`
+                `https://alumni-backend-6954.onrender.com/equity-zen/`
             );
             if (!response.ok) {
                 throw new Error('Failed to fetch company data');

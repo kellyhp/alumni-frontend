@@ -7,7 +7,7 @@ export default function AlumniUpdates() {
 
   useEffect(() => {
     // Fetch updates data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/compare`)
+    fetch(`https://alumni-backend-6954.onrender.com/compare`)
       .then(response => response.json())
       .then(data => {
         setUpdates(data);

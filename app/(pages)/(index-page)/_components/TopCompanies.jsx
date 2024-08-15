@@ -10,7 +10,7 @@ export default function TopCompanies() {
 
   useEffect(() => {
     // Fetch the top 5 companies data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/alumnis/top-5-companies`)
+    fetch(`https://alumni-backend-6954.onrender.com/alumnis/top-5-companies`)
         .then((response) => response.json())
         .then((data) => {
             setCompanyData(data);
